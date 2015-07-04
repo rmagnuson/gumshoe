@@ -1,0 +1,29 @@
+﻿<Window x:Class="GumShoe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+        Title="MainWindow" SizeToContent="Height" Width="525">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Spider">
+                <MenuItem Header="_Settings" Click="MenuItem_Spider_Settings_Click"/>
+                <MenuItem Header="_Go" Click="MenuItem_Spider_Go_Click"/>
+            </MenuItem>
+        </Menu>
+        <StackPanel>
+            <DataGrid x:Name="WebNodesDataGrid"
+                  AutoGenerateColumns="False"
+                  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="200" Margin="10,10,10,0">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Url" Binding="{Binding NodeUri.AbsoluteUri}"/>
+                    <DataGridTextColumn Header="Crawled" Binding="{Binding IsCrawled}"/>
+                    <DataGridTextColumn Header="Parsed" Binding="{Binding IsParsed}"/>
+                </DataGrid.Columns>
+            </DataGrid>    
+            <DataGrid x:Name="ChatterVolumeDataGrid"
+                  AutoGenerateColumns="True"
+                  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100" Margin="10,5,10,10"/>
+        </StackPanel>
+    </DockPanel>
+</Window>
