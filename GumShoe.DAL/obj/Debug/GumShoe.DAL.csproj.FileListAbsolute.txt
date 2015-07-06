@@ -12,3 +12,4 @@ d:\My Files\documents\visual studio 2013\Projects\GumShoe\GumShoe.DAL\bin\Debug\
 d:\My Files\documents\visual studio 2013\Projects\GumShoe\GumShoe.DAL\obj\Debug\GumShoe.DAL.csprojResolveAssemblyReference.cache
 d:\My Files\documents\visual studio 2013\Projects\GumShoe\GumShoe.DAL\obj\Debug\GumShoe.DAL.dll
 d:\My Files\documents\visual studio 2013\Projects\GumShoe\GumShoe.DAL\obj\Debug\GumShoe.DAL.pdb
+d:\My Files\Documents\Visual Studio 2013\Projects\GumShoe\GumShoe.DAL\bin\Debug\SQLite.Interop.dll

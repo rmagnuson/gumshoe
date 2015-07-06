@@ -82,5 +82,17 @@ namespace GumShoe {
                 this["Keyword"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("default.gms")]
+        public string DatabaseFile {
+            get {
+                return ((string)(this["DatabaseFile"]));
+            }
+            set {
+                this["DatabaseFile"] = value;
+            }
+        }
     }
 }

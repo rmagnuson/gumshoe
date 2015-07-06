@@ -20,3 +20,6 @@ d:\my files\documents\visual studio 2013\Projects\GumShoe\GumShoe\obj\Debug\GumS
 d:\my files\documents\visual studio 2013\Projects\GumShoe\GumShoe\obj\Debug\GumShoe.pdb
 d:\my files\documents\visual studio 2013\Projects\GumShoe\GumShoe\obj\Debug\SettingsWindow.baml
 d:\my files\documents\visual studio 2013\Projects\GumShoe\GumShoe\obj\Debug\SettingsWindow.g.cs
+d:\My Files\Documents\Visual Studio 2013\Projects\GumShoe\GumShoe\bin\Debug\System.Data.SQLite.dll
+d:\My Files\Documents\Visual Studio 2013\Projects\GumShoe\GumShoe\bin\Debug\System.Data.SQLite.xml
+d:\My Files\Documents\Visual Studio 2013\Projects\GumShoe\GumShoe\bin\Debug\SQLite.Interop.dll

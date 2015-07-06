@@ -27,16 +27,19 @@ namespace GumShoe
             SettingsAttempts.Text = Settings.Default.MaxAttempts.ToString();
             SettingsSteps.Text = Settings.Default.Steps.ToString();
             SettingsSecondsDelay.Text = Settings.Default.SecondsDelay.ToString();
+            DatabaseFile.Text = Settings.Default.DatabaseFile.ToString();
         }
 
         private void SettingsSave_Click(object sender, RoutedEventArgs e)
         {
             Settings.Default.StartingUrl = SettingsStartUrl.Text;
             Settings.Default.Keyword = SettingsKeyword.Text;
+            Settings.Default.DatabaseFile = DatabaseFile.Text;
             // Numeric Fields
             Settings.Default.MaxAttempts = int.Parse(SettingsAttempts.Text);
             Settings.Default.Steps = int.Parse(SettingsSteps.Text);
             Settings.Default.SecondsDelay = int.Parse(SettingsSecondsDelay.Text);
+            
             Settings.Default.Save();
             this.Close();
         }
@@ -62,6 +65,24 @@ namespace GumShoe
                     numValue = Math.Abs(numValue);
                 }
                 numericTextBox.Text = numValue.ToString();
+            }
+        }
+
+        private void DatabaseFileBrowse_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new Microsoft.Win32.OpenFileDialog();
+            dialog.CheckFileExists = false;
+            dialog.DefaultExt = ".gms";
+            dialog.Filter = "Gumshoe Files | *.gms";
+            bool? result = dialog.ShowDialog();
+            if (result == true)
+            {
+                string filename = dialog.FileName;
+                if (!filename.EndsWith(".gms"))
+                {
+                    filename += ".gms";
+                }
+                DatabaseFile.Text = filename;
             }
         }
 

@@ -6,3 +6,8 @@ d:\My Files\documents\visual studio 2013\Projects\GumShoe\GumShoe.Spider\bin\Deb
 d:\My Files\documents\visual studio 2013\Projects\GumShoe\GumShoe.Spider\obj\Debug\GumShoe.Spider.csprojResolveAssemblyReference.cache
 d:\My Files\documents\visual studio 2013\Projects\GumShoe\GumShoe.Spider\obj\Debug\GumShoe.Spider.dll
 d:\My Files\documents\visual studio 2013\Projects\GumShoe\GumShoe.Spider\obj\Debug\GumShoe.Spider.pdb
+d:\My Files\Documents\Visual Studio 2013\Projects\GumShoe\GumShoe.Spider\bin\Debug\GumShoe.DAL.dll
+d:\My Files\Documents\Visual Studio 2013\Projects\GumShoe\GumShoe.Spider\bin\Debug\System.Data.SQLite.dll
+d:\My Files\Documents\Visual Studio 2013\Projects\GumShoe\GumShoe.Spider\bin\Debug\GumShoe.DAL.pdb
+d:\My Files\Documents\Visual Studio 2013\Projects\GumShoe\GumShoe.Spider\bin\Debug\System.Data.SQLite.xml
+d:\My Files\Documents\Visual Studio 2013\Projects\GumShoe\GumShoe.Spider\bin\Debug\SQLite.Interop.dll

@@ -17,5 +17,8 @@
     <Setting Name="Keyword" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="DatabaseFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">default.gms</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

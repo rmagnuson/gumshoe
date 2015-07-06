@@ -39,25 +39,13 @@ namespace GumShoe
         {
             var spider = new Crawl();
             
-            ChatterVolumeDataGrid.ItemsSource = spider.Chatters;
+            //ChatterVolumeDataGrid.ItemsSource = spider.Chatters;
             WebNodesDataGrid.ItemsSource = spider.WebNodes;
             BindingOperations.EnableCollectionSynchronization(spider.WebNodes, WebNodesDataGrid.ItemsSource);
 
-            spider.Seed(Settings.Default.StartingUrl, Settings.Default.Keyword, Settings.Default.MaxAttempts,
-                Settings.Default.SecondsDelay);
-
+            spider.Seed(Settings.Default.StartingUrl, Settings.Default.MaxAttempts,
+                Settings.Default.SecondsDelay, Settings.Default.Steps, Settings.Default.DatabaseFile);
             spider.Start();
-            var MaxSteps = Settings.Default.Steps;
-            var step = 1;
-            while (step < MaxSteps)
-            {
-                spider.Continue();
-                if (spider.UncrawledCount == 0)
-                {
-                    break; // nothing left to crawl, just bail
-                }
-                step++;
-            }
         }
     }
 }

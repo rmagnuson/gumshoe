@@ -4,22 +4,25 @@
         Title="SettingsWindow" Height="365" Width="380">
     <Grid>
         <Grid HorizontalAlignment="Stretch" Height="275" VerticalAlignment="Top">
-            <TextBox x:Name="SettingsStartUrl" HorizontalAlignment="Stretch" Height="23" Margin="92,28,34,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="246"/>
-            <Label Content="Starting Url:" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Width="77"/>
+            <TextBox x:Name="SettingsStartUrl" HorizontalAlignment="Stretch" Height="23" Margin="92,53,34,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="246"/>
+            <Label Content="Starting Url:" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="77"/>
             <TextBox x:Name="SettingsSecondsDelay" 
-                     HorizontalAlignment="Stretch" Height="23" Margin="92,93,34,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="246"
+                     HorizontalAlignment="Stretch" Height="23" Margin="92,118,34,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="246"
                      TextChanged="txtNum_TextChanged"/>
-            <Label Content="Delay:" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top" Width="77"/>
+            <Label Content="Delay:" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" Width="77"/>
             <TextBox x:Name="SettingsAttempts" 
-                     HorizontalAlignment="Stretch" Height="23" Margin="92,124,34,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="246"
+                     HorizontalAlignment="Stretch" Height="23" Margin="92,149,34,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="246"
                      TextChanged="txtNum_TextChanged"/>
-            <Label Content="Attempts:" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Width="77"/>
+            <Label Content="Attempts:" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Width="77"/>
             <TextBox x:Name="SettingsSteps" 
-                     HorizontalAlignment="Stretch" Height="23" Margin="92,155,34,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="246"
+                     HorizontalAlignment="Stretch" Height="23" Margin="92,180,34,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="246"
                      TextChanged="txtNum_TextChanged"/>
-            <Label Content="Steps" HorizontalAlignment="Left" Margin="10,155,0,0" VerticalAlignment="Top" Width="77"/>
-            <TextBox x:Name="SettingsKeyword" HorizontalAlignment="Stretch" Height="23" Margin="92,59,34,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="246"/>
-            <Label Content="Keyword:" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Width="77"/>
+            <Label Content="Steps" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top" Width="77"/>
+            <TextBox x:Name="SettingsKeyword" HorizontalAlignment="Stretch" Height="23" Margin="92,84,34,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="246"/>
+            <Label Content="Keyword:" HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top" Width="77"/>
+            <TextBox x:Name="DatabaseFile" HorizontalAlignment="Stretch" Height="23" Margin="92,22,130,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="150"/>
+            <Label Content="Store Data:" HorizontalAlignment="Left" Margin="10,22,0,0" VerticalAlignment="Top" Width="77" />
+            <Button x:Name="BtnDatabaseFileBrowse" Content="Browse" HorizontalAlignment="Left" Height="23" Margin="262,22,0,0" VerticalAlignment="Top" Width="76" Click="DatabaseFileBrowse_Click"/>
         </Grid>
         <Button x:Name="BtnSave" Content="Save" HorizontalAlignment="Left" Margin="50,300,0,0" VerticalAlignment="Top" Width="100"
                 Click="SettingsSave_Click"/>
